@@ -1,0 +1,19 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "\"Going to be a simple calculator app for Snyk CI/CD pipeline build\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAER12392/simple-calculator-snyk.git"
+  },
+  "author": "Zeus Esquivel Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JAER12392/simple-calculator-snyk/issues"
+  },
+  "homepage": "https://github.com/JAER12392/simple-calculator-snyk#readme"
+}
