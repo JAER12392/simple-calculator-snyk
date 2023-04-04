@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JAER12392/simple-calculator-snyk/issues"
   },
-  "homepage": "https://github.com/JAER12392/simple-calculator-snyk#readme"
+  "homepage": "https://github.com/JAER12392/simple-calculator-snyk#readme",
+  "dependencies": {
+    "hapi": "^18.1.0"
+  }
 }
