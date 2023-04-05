@@ -13,7 +13,7 @@ pipeline {
         }
         stage('git clone') {
             steps {
-                git branch: 'main', credentialsId: 'simple-calculator-snyk', url: 'https://github.com/JAER12392/simple-calculator-snyk.git'
+                git branch: 'main', credentialsId: 'GITHUB_CRED', url: 'https://github.com/JAER12392/simple-calculator-snyk.git'
             }
         }
         stage('Snyk Install') {
