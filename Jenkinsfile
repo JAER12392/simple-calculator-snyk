@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "node_installer"
+        nodejs "18.4.0"
     }
 
     stages {
