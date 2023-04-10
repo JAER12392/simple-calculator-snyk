@@ -20,7 +20,7 @@ pipeline {
         stage('Snyk Install') {
             
             steps {
-                withCredentials([string(credentialsId: 'ZEUS_TOKEN', variable: 'SNYK_TOKEN')]) {
+                withCredentials([(credentialsId: 'ZEUS_TOKEN', variable: 'SNYK_TOKEN')]) {
                     sh 'npm install -g snyk'
                     sh 'snyk auth ${SNYK_TOKEN}'
                 }
