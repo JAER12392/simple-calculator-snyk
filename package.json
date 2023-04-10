@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JAER12392/simple-calculator-snyk#readme",
   "dependencies": {
-    "hapi": "^18.1.0"
+    "hapi": "^18.1.0",
+    "nodejs": "^19.8.1"
   }
 }
