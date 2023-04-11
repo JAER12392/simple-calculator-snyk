@@ -44,17 +44,6 @@ pipeline {
                 sh 'snyk-to-html -i code-results.json -o code-results.html'
             }
         }
-        stage('Publish Code Artifact') {
-            steps {
-                publishHTML (target : [allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
-                    reportDir: '.',
-                    reportFiles: 'code-results.html',
-                    reportName: 'Snyk Code',
-                    reportTitles: 'Snyk Code'])
-            }
-        }
         stage('Snyk Open Source Test') {
             steps {
                 catchError(buildResult:"SUCCESS", stageResult: 'FAILURE') {
